@@ -26,8 +26,6 @@ The instance runs [Ubuntu Server](https://ubuntu.com/server) and serves the site
 
 ## Caveats and Limitations
 
-- **Single instance, no scaling:** This setup uses one `t2.micro` instance with no load balancer or auto scaling — it's a learning project, not a production architecture.
-- **Free Tier sizing:** `t2.micro` is Free Tier eligible but not suited for real production traffic.
 - **CodeDeploy not used:** Accounts created after July 15, 2025 on AWS's **Free Plan** don't have access to AWS CodeDeploy. The CI/CD pipeline in this project uses **CodeBuild + AWS Systems Manager (Run Command)** instead, which stays fully within Free Plan limits.
 - **IP changes on stop/start:** Without an Elastic IP, the instance's public IP changes if it's stopped and restarted.
 
@@ -46,7 +44,7 @@ $ curl http://<PUBLIC_IP>
 
 ## Requirements
 
-- An [AWS account](https://aws.amazon.com/) (Free Plan or Paid Plan).
+- An [AWS account](https://aws.amazon.com/) 
 - An SSH client `ssh`
 - *(Optional, for stretch goals)* a registered domain name.
 
