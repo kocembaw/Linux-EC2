@@ -4,7 +4,7 @@
 [![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org/)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 
-A hands-on cloud computing project demonstrating how to launch an AWS EC2 instance, connect to it via SSH, and deploy a static website served by Nginx — with an optional CI/CD pipeline that auto-deploys changes on every push.
+A hands-on cloud computing project demonstrating how to launch an AWS EC2 instance, connect to it via SSH, and deploy a static website served by Nginx -- with an optional CI/CD pipeline that auto-deploys changes on every push.
 
 ## Table of Contents
 - [What It Is](#what-it-is)
@@ -78,7 +78,7 @@ $ curl http://<PUBLIC_IP>
 
 ## Advanced Usage: CI/CD Pipeline
 
-Changes pushed to this repository can be deployed automatically using **GitHub → CodePipeline → CodeBuild → AWS Systems Manager → EC2**, without relying on AWS CodeDeploy:
+Changes pushed to this repository can be deployed automatically using **GitHub -> CodePipeline -> CodeBuild -> AWS Systems Manager -> EC2**, without relying on AWS CodeDeploy:
 
 ```yaml
 # buildspec.yml (excerpt)
